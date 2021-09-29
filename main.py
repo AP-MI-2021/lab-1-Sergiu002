@@ -20,7 +20,7 @@ def get_product(lst):
   result = 1
   for x in lst:
     result = result * x
-      return result
+  return result
   
   
 '''
@@ -28,7 +28,7 @@ Returneaza CMMDC a doua numere x si y folosind primul algoritm.
 '''
 def get_cmmdc_v1(x, y):
   if y == 0:
-    return x:
+    return x
   else:
     return get_cmmdc_v1(y, (x % y))
   
@@ -42,10 +42,15 @@ def get_cmmdc_v2(x, y):
     x = y
     y = r
     r = x % y
-   return y
+  return y
   
 def main():
-  
+  myResult = is_prime(11)
+  print(myResult)
+  Cmmdc_one = get_cmmdc_v1(2, 12)
+  print(Cmmdc_one)
+  Cmmdc_two = get_cmmdc_v2(3, 18)
+  print(Cmmdc_two)
 
 if __name__ == '__main__':
   main()
